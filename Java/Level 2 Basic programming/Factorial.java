@@ -53,10 +53,20 @@
             System.out.println("Enter the number: ");
             int num = scanner.nextInt();
             long fact =1;
+            // Works for Fractional number 5*4*3*2*1
+            // Wrong versions
+            // for(int i =num; i > 0;i--){
+            //     fact = fact * i;
+            // }
 
-            for(int i =1; i<= num;i++){
+
+            // Works for Fractional number 1*2*3*4*5;
+            // Right versions
+            for(int i =1; i <= num;i++){
                 fact = fact * i;
             }
+
+
             System.out.println("Your factorial is : " +fact);
         }
     }
