@@ -57,3 +57,29 @@ import java.util.*;
     
 //     }
 // }
+
+public class Reverse {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Size of array:");
+        int num = sc.nextInt();
+
+        int[] numArray = new int[num];
+
+        System.out.println("Enter elements:");
+
+        for(int i = 0; i < num; i++){
+            numArray[i] = sc.nextInt();
+        }
+
+        System.out.println("Reversed Array:");
+
+        for(int i = numArray.length - 1; i >= 0; i--){
+            System.out.print(numArray[i] + " ");
+        }
+
+    }
+}
